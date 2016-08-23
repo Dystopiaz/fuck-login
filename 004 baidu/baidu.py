@@ -70,7 +70,7 @@ def get_callback():
     n = math.floor(random.random() * 2147483648)
     a = []
     while n != 0:
-        a.append(loopabc[n % 36])
+        a.append(loopabc[int(n % 36)])
         n = n // 36
     a.reverse()
     callback = prefix + ''.join(a)
